@@ -26,9 +26,40 @@ class OperacionesController extends Controller
         $resultado = $num1 - $num2;
         return $resultado;
     }
+
     public function multiplicar($num1, $num2)
     {
         $resultado = $num1 * $num2;
+        return $resultado;
+    }
+
+    public function AreaTriangulo($base, $altura)
+    {
+        $resultado = ($base * $altura) / 2;
+        return $resultado;
+    }
+
+    public function AreaCuadrado($lado)
+    {
+        $resultado = $lado * $lado;
+        return $resultado;
+    }
+
+    public function AreaRectangulo($base, $altura)
+    {
+        $resultado = $base * $altura;
+        return $resultado;
+    }
+
+    public function AreaParalelogramo ($base, $altura)
+    {
+        $resultado = $base * $altura;
+        return $resultado;
+    }
+
+    public function AreaCirculo ($radio)
+    {
+        $resultado = $radio * $radio * 3.14;
         return $resultado;
     }
 }

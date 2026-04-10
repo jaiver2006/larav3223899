@@ -20,3 +20,13 @@ Route::get('/saludofuncion',[OperacionesController::class,'saludar']);
 Route::get('/restar/{num1}/{num2}',[OperacionesController::class,'restar']);
 
 Route::get('/multiplicar/{num1}/{num2}',[OperacionesController::class,'multiplicar']);
+
+Route::get('/AreaTriangulo/{base}/{altura}',[OperacionesController::class,'AreaTriangulo']);
+
+Route::get('/AreaCuadrado/{lado}',[OperacionesController::class,'AreaCuadrado']);
+
+Route::get('/AreaRectangulo/{base}/{altura}',[OperacionesController::class,'AreaRectangulo']);
+
+Route::get('/AreaParalelogramo/{base}/{altura}',[OperacionesController::class,'AreaParalelogramo']);
+
+Route::get('/AreaCirculo/{radio}',[OperacionesController::class,'AreaCirculo']);
