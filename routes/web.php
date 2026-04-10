@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OperacionesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/sumar/{num1}/{num2}',[OperacionesController::class,'sumar']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/saludofuncion',[OperacionesController::class,'saludar']);
+
+Route::get('/restar/{num1}/{num2}',[OperacionesController::class,'restar']);
+
+Route::get('/multiplicar/{num1}/{num2}',[OperacionesController::class,'multiplicar']);
