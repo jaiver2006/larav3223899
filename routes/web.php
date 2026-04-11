@@ -30,3 +30,7 @@ Route::get('/AreaRectangulo/{base}/{altura}',[OperacionesController::class,'Area
 Route::get('/AreaParalelogramo/{base}/{altura}',[OperacionesController::class,'AreaParalelogramo']);
 
 Route::get('/AreaCirculo/{radio}',[OperacionesController::class,'AreaCirculo']);
+
+Route::get('/Trapecio/{base}/{altura}',[OperacionesController::class,'Trapecio']);
+
+Route::get('/cuadratica/{a}/{b}/{c}',[OperacionesController::class,'cuadratica']);
